@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://app.coint.jp'),
 
     'asset_url' => env('ASSET_URL'),
 
@@ -70,7 +70,7 @@ return [
     |
     */
 
-//  'timezone' => 'UTC',
+    //'timezone' => 'UTC',
     'timezone' => 'Asia/Tokyo',
 
     /*
@@ -84,7 +84,7 @@ return [
     |
     */
 
-//  'locale' => 'en',
+    //'locale' => 'en',
     'locale' => 'ja',
 
     /*
@@ -98,8 +98,7 @@ return [
     |
     */
 
-//  'fallback_locale' => 'en',
-    'fallback_locale' => 'ja',
+    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -112,7 +111,7 @@ return [
     |
     */
 
-//  'faker_locale' => 'en_US',
+    //'faker_locale' => 'en_US',
     'faker_locale' => 'ja_JP',
 
     /*
@@ -172,6 +171,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+	Laravel\Socialite\SocialiteServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -187,6 +187,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+	'Socialite' => Laravel\Socialite\Facades\Socialite::class, 
     ])->toArray(),
 
 ];

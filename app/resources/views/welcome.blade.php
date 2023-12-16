@@ -30,7 +30,9 @@
                 </div>
             @endif
 
-
+<div>
+    <a href="/login/google">Google</a>
+</div>
 
 <div class="Form">
   <div class="Form-Item">
